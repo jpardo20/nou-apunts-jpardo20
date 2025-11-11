@@ -1,0 +1,39 @@
+site_name: Apunts Joan Pardo
+site_url: https://jpardo20.github.io/apunts-jpardo20/
+site_description: Apunts i activitats de SMX i DAM (Xarxes, BBDD, Programació, etc.)
+
+theme:
+  name: material
+  language: ca
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - content.code.copy
+    - search.highlight
+    - search.suggest
+
+plugins:
+  - search
+  - macros
+  - tags
+  - social
+  - offline
+  - optimize
+  # Pots afegir 'privacy' si vols localitzar fonts externes:
+  # - privacy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+nav:
+  - Inici: index.md
+  - Per a SMX: smx/index.md
+  - Per a DAM: dam/index.md

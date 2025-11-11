@@ -1,0 +1,32 @@
+/* Base comuna per a totes les targetes */
+.grid.cards > * {
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+
+/* TEORIA: fred, net (blau) */
+.grid.cards.cards-theory > * {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 6%, transparent);
+  border-left: 6px solid var(--md-primary-fg-color);
+}
+.grid.cards.cards-theory h3::before {
+  content: "📘 ";
+}
+
+/* ACTIVITATS: més cridaner (ambre/taronja) */
+.grid.cards.cards-activities > * {
+  background: color-mix(in srgb, #ffb300 8%, transparent);
+  border-left: 6px solid #ffb300;
+}
+.grid.cards.cards-activities h3::before {
+  content: "🧪 ";
+}
+
+/* Botons */
+.md-button.md-button--primary { font-weight: 600; }
+
+@media (min-width: 900px) {
+  .grid.cards > * { padding: 1.1rem 1.25rem; }
+}
